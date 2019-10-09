@@ -8,7 +8,7 @@ if (text == "undefined") {
 
 // Display Text, adding line breaks where there is a \n
 var display = document.getElementById("display");
-display.innerHTML = text.replace("\\n", "<br>");
+display.innerHTML = text.replace("\\n", "<br>").replace("+", " ");
 
 // Figure out the maximum line length and setting font size accordinglyu
 var line_length_max = 0;
