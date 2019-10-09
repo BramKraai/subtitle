@@ -20,4 +20,4 @@ for (var i=0; i<lines.length; i++){
     }
 }
 
-display.style.fontSize = (100 / line_length_max) + 'vw';
+display.style.fontSize = Math.max(100 / line_length_max, 4) + 'vw';
